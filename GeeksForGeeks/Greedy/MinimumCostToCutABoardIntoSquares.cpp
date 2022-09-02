@@ -17,6 +17,13 @@ class Solution
 public:
     int minimumCostOfBreaking(vector<int> X, vector<int> Y, int M, int N)
     {
+        /**
+         * Approach:
+         * 1. Sort both the vectors, everytime get the maximum value of the two vectors, such that;
+         * if both vector have same largest value, then pick the value from the larger vector and
+         * multiply by the number of horizontal or vertical Partitions.
+         * 2. Got this idea by observing the sample test cases.
+         */
         int cost = 0;
         int horizontalPartitions = 1;
         int verticalPartitions = 1;

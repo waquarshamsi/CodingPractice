@@ -11,7 +11,7 @@ package Arrays;
 import java.io.*;
 import java.util.*;
 
-class Solution
+class SortAnArrayOf0s1sAnd2sSolution
 {
     public static void sort012(int a[], int n)
     {
@@ -54,7 +54,7 @@ public class SortAnArrayOf0s1sAnd2s {
             for(int i=0; i<n; i++){
                 arr[i] = Integer.parseInt(inputLine[i]);
             }
-            Solution ob=new Solution();
+            SortAnArrayOf0s1sAnd2sSolution ob=new SortAnArrayOf0s1sAnd2sSolution();
             ob.sort012(arr, n);
             StringBuffer str = new StringBuffer();
             for(int i=0; i<n; i++){

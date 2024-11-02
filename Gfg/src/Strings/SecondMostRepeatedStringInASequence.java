@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-class Solution
+class SecondMostRepeatedStringInASequenceSolution
 {
     String secFrequent(String arr[], int N)
     {
@@ -43,7 +43,7 @@ public class SecondMostRepeatedStringInASequence {
             String arr[] = new String[n];
             for(int i = 0;i<n;i++)
                 arr[i] = sc.next();
-            Solution ob = new Solution();
+            SecondMostRepeatedStringInASequenceSolution ob = new SecondMostRepeatedStringInASequenceSolution();
             System.out.println(ob.secFrequent(arr, n));
         }
     }

@@ -71,6 +71,8 @@ Find maximum element in arrayList . O(). java.util.Collections;<br>
 ```java 
 List<X> list = new ArrayList<>();
 Collections.max(list);
+//similarly to find summation:
+Arrays.stream(arr).sum();
 ```
 
 Find maximum element in primitive array . O(). java.util.Arrays;<br>

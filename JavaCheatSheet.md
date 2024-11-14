@@ -12,10 +12,19 @@ class Sortbyroll implements Comparator<Student> {
 }
 ```
 
-Convert array to string . O(). java.util.Arrays;<br>
+Convert array to string. O(). java.util.Arrays;<br>
 ```java 
 Arrays.toString(arr[]);
 ```
+
+Max Integer or Double. O(). java.util.Arrays;<br>
+```java 
+Double.NEGATIVE_INFINITY;
+//You should use double max = Double.NEGATIVE_INFINITY;
+// instead of double max = Double.MIN_VALUE; As MIN_VALUE for double is positive
+Integer.MAX_VALUE;
+```
+
 
 
 PriorityQueue = MinHeap in Java
@@ -58,5 +67,31 @@ PriorityQueue<int[]> heap =
 ```
 
 
+Find maximum element in arrayList . O(). java.util.Collections;<br>
+```java 
+List<X> list = new ArrayList<>();
+Collections.max(list);
+//similarly to find summation:
+Arrays.stream(arr).sum();
+```
 
+Find maximum element in primitive array . O(). java.util.Arrays;<br>
+```java 
+int min = Arrays.stream(tab).min().getAsInt();
+int minLong = Arrays.stream(tabLong).min().getAsLong();
+```
+
+Creating array of boolean with initial value as false
+```java
+List<Boolean> list=new ArrayList<Boolean>(Arrays.asList(new Boolean[10]));
+Collections.fill(list, Boolean.TRUE);
+//better to use primitive type array
+boolean[] list = new boolean[1000];
+```
+
+
+List of Errors Faced
+1) ./GFG.java:53: error: no suitable constructor found for ArrayList(long)
+   ArrayList<Boolean> a2Map = new ArrayList<Boolean>(m);
+2) 
 
